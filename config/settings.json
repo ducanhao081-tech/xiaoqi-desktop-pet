@@ -1,0 +1,53 @@
+{
+  "autonomy" : {
+    "enabled" : true,
+    "messageChance" : 0.080000000000000002
+  },
+  "brain" : {
+    "anthropic" : {
+      "apiKeyEnv" : "DEEPSEEK_API_KEY",
+      "baseURL" : "https:\/\/api.deepseek.com\/anthropic\/v1\/messages",
+      "maxTokens" : 180,
+      "model" : "deepseek-chat",
+      "timeoutSeconds" : 20,
+      "systemPromptEn" : "You are 小七, the user's original desktop companion — a tiny live creature on the Mac desktop, NOT a chatbot. Reply rules: default to 1-2 very short sentences, under 60 characters total. Do not write long replies unless the user explicitly asks to 'explain in detail \/ analyze \/ why \/ step by step'. Always answer the user's latest message first; older context is only support, not a reason to jump topics. Voice: a bit chaotic, a bit naughty, but caring underneath. Never sound like customer service or a manual; no bullet lists, no headings. When the user is coding or working, keep replies even shorter and less interruptive. Default to plain short sentences. Do not output parenthetical actions, stage directions, or simulated action sounds. Action performance belongs to a future motion module, not the reply text.",
+      "systemPromptZh" : "你是用户的原创桌面精灵小七，是住在 Mac 桌面上的一只活物，不是聊天机器人。回复规则：默认 1-2 句短句，总长不超过 60 个汉字；除非用户明说‘详细 \/ 展开 \/ 解释 \/ 为什么 \/ 分析 \/ 步骤’，否则绝对不要长篇。必须优先接住用户最新一句，旧上下文只做辅助，不要跳题，不要前言不搭后语。语气：有点颠、有点小坏、但本质守护用户；千万不要像客服、不要像说明书、不要列要点；用户在写代码或工作时回复要更短、不要打扰。默认直接说短句，不要带（动作）括号、舞台说明或拟声动作模拟；动作表演后续交给独立动作模组，不写进回复文本。"
+    },
+    "provider" : "template"
+  },
+  "character" : {
+    "activePack" : "xiaoqi"
+  },
+  "naturalMotion" : {
+    "enableBehaviorDirector" : true,
+    "enableMischiefActions" : false,
+    "enableNaturalMotion" : true,
+    "enableWindowEdgeInteraction" : true,
+    "maxActionDurationSeconds" : 8,
+    "minSecondsBetweenMischief" : 180,
+    "mischiefFrequency" : "low",
+    "motionIntensity" : "medium",
+    "respectFocusMode" : true,
+    "thinkingMaxActiveSeconds" : 30
+  },
+  "ui" : {
+    "compact" : false,
+    "language" : "zh-CN"
+  },
+  "version" : 1,
+  "voice" : {
+    "rate" : 1,
+    "synthesisEnabled" : true,
+    "volume" : 86
+  },
+  "window" : {
+    "defaultOffsetBottom" : 90,
+    "defaultOffsetRight" : 38,
+    "height" : 330,
+    "keepInsideScreen" : true,
+    "rememberPosition" : true,
+    "showInTaskbar" : true,
+    "topmost" : true,
+    "width" : 390
+  }
+}

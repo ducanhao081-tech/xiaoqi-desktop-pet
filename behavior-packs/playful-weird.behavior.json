@@ -1,0 +1,30 @@
+{
+  "id": "playful-weird",
+  "name": "机灵古怪行为包",
+  "tags": ["playful", "weird", "high-energy", "curious"],
+  "actions": [
+    {
+      "id": "mouse-peek",
+      "label": "盯一下鼠标",
+      "weight": 0.55,
+      "state": "curious"
+    },
+    {
+      "id": "tiny-hop",
+      "label": "小跳一下",
+      "weight": 0.62,
+      "state": "excited"
+    },
+    {
+      "id": "sudden-pose",
+      "label": "突然定格",
+      "weight": 0.38,
+      "state": "weird"
+    }
+  ],
+  "weightRules": {
+    "playfulness": 0.35,
+    "curiosity": 0.25,
+    "calmness": -0.12
+  }
+}

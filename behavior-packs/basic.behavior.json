@@ -1,0 +1,31 @@
+{
+  "id": "basic",
+  "name": "基础桌宠行为包",
+  "tags": ["idle", "walk", "listen", "speak", "sleep"],
+  "actions": [
+    {
+      "id": "idle-breathe",
+      "label": "呼吸待机",
+      "weight": 1.0,
+      "state": "idle"
+    },
+    {
+      "id": "wander",
+      "label": "短距离走动",
+      "weight": 0.75,
+      "state": "walk"
+    },
+    {
+      "id": "think",
+      "label": "歪头思考",
+      "weight": 0.45,
+      "state": "thinking"
+    },
+    {
+      "id": "sleep",
+      "label": "趴下休息",
+      "weight": 0.18,
+      "state": "sleeping"
+    }
+  ]
+}

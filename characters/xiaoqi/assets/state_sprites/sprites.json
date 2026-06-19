@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "id": "xiaoqi-state-sprites",
+  "canvas": {
+    "width": 370,
+    "height": 435
+  },
+  "runtimeDefault": "idle.png remains the active aligned runtime image for now.",
+  "sprites": [
+    {
+      "state": "front",
+      "file": "assets/state_sprites/front.png",
+      "source": "assets/raw_sprites/sprite_002.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 57,
+        "y": 84,
+        "width": 256,
+        "height": 330
+      },
+      "notes": "front-facing turnaround candidate"
+    },
+    {
+      "state": "happy",
+      "file": "assets/state_sprites/happy_hearts.png",
+      "source": "assets/raw_sprites/sprite_012.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 38,
+        "y": 94,
+        "width": 293,
+        "height": 320
+      },
+      "notes": "heart / happy expression candidate"
+    },
+    {
+      "state": "angry",
+      "file": "assets/state_sprites/angry.png",
+      "source": "assets/raw_sprites/sprite_017.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 48,
+        "y": 94,
+        "width": 275,
+        "height": 320
+      },
+      "notes": "anger mark expression candidate"
+    },
+    {
+      "state": "sleepy",
+      "file": "assets/state_sprites/sleepy_blanket.png",
+      "source": "assets/raw_sprites/sprite_038.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 14,
+        "y": 164,
+        "width": 341,
+        "height": 250
+      },
+      "notes": "sleep / tucked-in candidate"
+    },
+    {
+      "state": "fireball",
+      "file": "assets/state_sprites/fireball.png",
+      "source": "assets/raw_sprites/sprite_025.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 8,
+        "y": 114,
+        "width": 355,
+        "height": 300
+      },
+      "notes": "small magic / fireball action candidate"
+    },
+    {
+      "state": "cheer",
+      "file": "assets/state_sprites/cheer.png",
+      "source": "assets/raw_sprites/sprite_050.png",
+      "canvas": {
+        "width": 370,
+        "height": 435
+      },
+      "placement": {
+        "x": 10,
+        "y": 84,
+        "width": 351,
+        "height": 330
+      },
+      "notes": "celebration / jump candidate"
+    }
+  ],
+  "knownLimits": [
+    "These are normalized candidates, not final high-resolution assets.",
+    "Do not wire them into state swaps until visual alignment is manually accepted.",
+    "Source sheet crops are lower resolution than idle.png and may look soft when enlarged."
+  ]
+}

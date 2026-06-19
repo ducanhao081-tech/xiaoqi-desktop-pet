@@ -1,0 +1,17 @@
+.DS_Store
+.build-mac/
+.module-cache/
+logs/
+local-state/
+reports/
+outputs/
+backups/
+__pycache__/
+.pytest_cache/
+*.log
+*.tmp
+*.swp
+*.zip
+.env
+.env.*
+!.env.example

@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "provider": "doubao-cloud",
+  "futureProvider": "local_voice_pack_or_custom_voice_when_needed",
+  "voiceMode": "custom_voice_when_authorized",
+  "fallback": "system",
+  "languages": [
+    "zh-CN",
+    "en-US",
+    "ja-JP"
+  ],
+  "license": "system-fallback",
+  "consent": "not_required_for_system_voice",
+  "voiceId": "",
+  "samplePath": "",
+  "cloudASR": {
+    "provider": "doubao-asr",
+    "endpoint": "",
+    "appIdEnv": "DOUBAO_ASR_APP_ID",
+    "accessTokenEnv": "DOUBAO_ASR_ACCESS_TOKEN",
+    "apiKeyEnv": "DOUBAO_ASR_API_KEY",
+    "clusterEnv": "DOUBAO_ASR_CLUSTER",
+    "languageEnv": "DOUBAO_ASR_LANGUAGE",
+    "defaultCluster": "",
+    "defaultLanguage": "zh-CN",
+    "resourceId": "",
+    "audioFormat": "wav",
+    "sampleRate": 16000
+  },
+  "cloudTTS": {
+    "provider": "doubao-http-v3",
+    "endpoint": "https://openspeech.bytedance.com/api/v3/tts/unidirectional",
+    "appIdEnv": "DOUBAO_TTS_APP_ID",
+    "accessTokenEnv": "DOUBAO_TTS_ACCESS_TOKEN",
+    "apiKeyEnv": "DOUBAO_TTS_API_KEY",
+    "clusterEnv": "DOUBAO_TTS_CLUSTER",
+    "voiceTypeEnv": "DOUBAO_TTS_VOICE_TYPE",
+    "defaultCluster": "",
+    "defaultVoiceType": "zh_female_vv_uranus_bigtts",
+    "resourceIdEnv": "DOUBAO_TTS_RESOURCE_ID",
+    "resourceId": "seed-tts-2.0",
+    "encoding": "mp3",
+    "sampleRate": 24000
+  },
+  "style": {
+    "base": "soft_bright_playful",
+    "speed": 1.05,
+    "pitch": 1.08,
+    "volume": 0.86,
+    "emotionMap": {
+      "idle": "gentle",
+      "happy": "cheerful",
+      "thinking": "curious_soft",
+      "sleepy": "low_soft",
+      "angry": "short_pouty",
+      "comfort": "warm_guarding"
+    }
+  },
+  "notes": [
+    "如果用户提供合法授权的训练音频，可创建自定义 voiceId。",
+    "未配置自定义 voiceId 时使用 macOS 系统语音兜底。",
+    "说话应短、软、清楚，避免过度尖锐。"
+  ]
+}
